@@ -11,6 +11,11 @@
 		7DD2412D274D74BF001DD626 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD2412C274D74BF001DD626 /* ContentView.swift */; };
 		7DD2412F274D74C0001DD626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DD2412E274D74C0001DD626 /* Assets.xcassets */; };
 		7DD24132274D74C0001DD626 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DD24131274D74C0001DD626 /* Preview Assets.xcassets */; };
+		7DD24139274D74EB001DD626 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD24138274D74EB001DD626 /* Activity.swift */; };
+		7DD2413B274D7586001DD626 /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD2413A274D7586001DD626 /* Activities.swift */; };
+		7DD2413D274D8337001DD626 /* AddActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD2413C274D8337001DD626 /* AddActivity.swift */; };
+		7DD2413F274D9530001DD626 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD2413E274D9530001DD626 /* ActivityView.swift */; };
+		7DD24141274D9A19001DD626 /* DraculaUI-Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD24140274D9A19001DD626 /* DraculaUI-Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		7DD2412C274D74BF001DD626 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7DD2412E274D74C0001DD626 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DD24131274D74C0001DD626 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7DD24138274D74EB001DD626 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		7DD2413A274D7586001DD626 /* Activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
+		7DD2413C274D8337001DD626 /* AddActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivity.swift; sourceTree = "<group>"; };
+		7DD2413E274D9530001DD626 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		7DD24140274D9A19001DD626 /* DraculaUI-Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DraculaUI-Theme.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,11 @@
 			children = (
 				7DD2412A274D74BF001DD626 /* HabitsApp.swift */,
 				7DD2412C274D74BF001DD626 /* ContentView.swift */,
+				7DD2413E274D9530001DD626 /* ActivityView.swift */,
+				7DD2413C274D8337001DD626 /* AddActivity.swift */,
+				7DD24138274D74EB001DD626 /* Activity.swift */,
+				7DD2413A274D7586001DD626 /* Activities.swift */,
+				7DD24140274D9A19001DD626 /* DraculaUI-Theme.swift */,
 				7DD2412E274D74C0001DD626 /* Assets.xcassets */,
 				7DD24130274D74C0001DD626 /* Preview Content */,
 			);
@@ -137,8 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DD2413B274D7586001DD626 /* Activities.swift in Sources */,
+				7DD24139274D74EB001DD626 /* Activity.swift in Sources */,
+				7DD2413D274D8337001DD626 /* AddActivity.swift in Sources */,
 				7DD2412D274D74BF001DD626 /* ContentView.swift in Sources */,
 				7DD2412B274D74BF001DD626 /* HabitsApp.swift in Sources */,
+				7DD24141274D9A19001DD626 /* DraculaUI-Theme.swift in Sources */,
+				7DD2413F274D9530001DD626 /* ActivityView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
