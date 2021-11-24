@@ -34,10 +34,13 @@ struct ContentView: View {
             .navigationTitle("Habits")
             .preferredColorScheme(.dark)
             .toolbar {
-                Button {
-                    addingNewActivity.toggle()
-                } label: {
-                    Label("Add new activity", systemImage: "plus")
+                ToolbarItem(placement: .bottomBar) {
+                    Button {
+                        addingNewActivity.toggle()
+                    } label: {
+                        Label("New Activity", systemImage: "plus")
+                            .labelStyle(.titleAndIcon)
+                    }
                 }
             }
             .sheet(isPresented: $addingNewActivity) {

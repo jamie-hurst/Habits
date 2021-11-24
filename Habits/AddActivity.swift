@@ -20,7 +20,7 @@ struct AddActivity: View {
                 TextField("Title", text: $title)
                 TextField("Description", text: $description)
             }
-            .navigationTitle("Add Activity")
+            .navigationTitle("New Activity")
             .toolbar {
                 Button("Save") {
                     let trimmedTitle = title.trimmingCharacters(in: .whitespaces)
