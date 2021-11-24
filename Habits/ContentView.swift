@@ -13,27 +13,36 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            List(data.activities) { activity in
-                NavigationLink {
-                    ActivityView(data: data, activity: activity)
-                } label: {
-                    HStack {
-                        Text(activity.title)
-                        Spacer()
-                        
-                        Text(String(activity.completionCount))
-                            .font(.footnote.bold())
-                            .foregroundColor(.black)
-                            .padding(10)
-                            .frame(minWidth: 50)
-                            .background(color(for: activity))
-                            .clipShape(Capsule())
+            List {
+                ForEach(data.activities) {
+                    activity in
+                    NavigationLink {
+                        ActivityView(data: data, activity: activity)
+                    } label: {
+                        HStack {
+                            Text(activity.title)
+                            Spacer()
+                            
+                            Text(String(activity.completionCount))
+                                .font(.footnote.bold())
+                                .foregroundColor(.black)
+                                .padding(10)
+                                .frame(minWidth: 50)
+                                .background(color(for: activity))
+                                .clipShape(Capsule())
+                        }
                     }
                 }
+                .onDelete(perform: removeItems)
             }
             .navigationTitle("Habits")
             .preferredColorScheme(.dark)
+            
             .toolbar {
+                ToolbarItem {
+                    EditButton()
+                }
+                
                 ToolbarItem(placement: .bottomBar) {
                     Button {
                         addingNewActivity.toggle()
@@ -63,6 +72,9 @@ struct ContentView: View {
         }
     }
     
+    func removeItems(at offsets: IndexSet) {
+        data.activities.remove(atOffsets: offsets)
+    }
     
 }
 
